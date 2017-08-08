@@ -3,7 +3,6 @@ import devEnv from 'utils/dev-env';
 
 // dependencies
 import Barba from 'barba.js';
-import {TweenLite, TimelineMax} from 'gsap';
 
 import SimpleFade from 'transitions/simple-fade';
 

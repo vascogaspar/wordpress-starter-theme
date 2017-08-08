@@ -1,4 +1,4 @@
-import {TimelineMax, TweenLite} from 'gsap';
+import {TimelineMax} from 'gsap';
 var Barba = require('barba.js');
 
 function simpleFade(scope) {
