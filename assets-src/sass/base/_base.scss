@@ -1,0 +1,17 @@
+@import '../utils/media-queries';
+
+body {
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  font-family: $mono-light;
+  color: black;
+
+  &.overflow-hidden {
+    overflow: hidden;
+  }
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}

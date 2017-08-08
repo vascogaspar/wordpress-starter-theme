@@ -1,0 +1,78 @@
+{
+  "root": {
+    "src": "./assets-src",
+    "dest": "./assets"
+  },
+
+  "tasks": {
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "browserSync": {
+      "proxy": "http://localhost:8888"
+    },
+
+    "html": {
+      "src": "",
+      "dest": "./",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html"],
+      "excludeFolders": []
+    },
+
+    "js": {
+      "src": "js",
+      "dest": "js",
+      "entries": {
+        "main": ["main.js"]
+      },
+      "extensions": ["js", "json"],
+      "babel": {
+        "presets": ["es2015", "stage-1"],
+        "plugins": []
+      },
+      "extractSharedJs": false
+    },
+
+    "css": {
+      "src": "sass",
+      "dest": "css",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true,
+        "includePaths": [
+          "node_modules/normalize.scss"
+        ]
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+    "images": {
+      "src": "images",
+      "dest": "images",
+      "extensions": ["jpg", "png", "svg", "gif", "mp4"]
+    },
+
+    "fonts": {
+      "src": "fonts",
+      "dest": "fonts",
+      "extensions": ["woff2", "woff", "eot", "ttf", "svg"]
+    },
+
+    "svgSprite": {
+      "src": "icons",
+      "dest": "images",
+      "extensions": ["svg"]
+    },
+
+    "production" : {
+      "rev": false
+    }
+  }
+}
